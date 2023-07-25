@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn01" onclick="on1()" value="事件绑定1">
+    <input type="button" id="btn02" onclick="on2()" value="事件绑定2">
+    <input type="button" id="btn03"  value="事件绑定3">
+
+</body>
+<script>
+    function on1(){
+        alert("点击按钮1");
+    }
+    function on2(){
+        alert("点击按钮2");
+    }
+    document.getElementById("btn03").onclick=function(){
+        alert("点击按钮3");
+    }
+</script>
+</html>

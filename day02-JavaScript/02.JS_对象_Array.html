@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,null,"i love u",]
+/*         for(let i=0;i<arr.length;i++){
+            alert(arr[i]);
+        }
+        arr.forEach(function(e){
+            console.log(e);
+        })
+        //  ES6中新的函数定义方法 
+        arr.forEach((e=>{
+            console.log(e);
+        })) */
+        arr.push(1,2,"who are u?");
+        // console.log(arr);
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+        arr.splice(2,2);
+        for(let i=0;i<arr.length;i++){
+            console.log(arr[i]);
+        }
+    </script>
+</body>
+</html>
