@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Vue.js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div v-for="arr in arrs"> {{arr}} </div>
+
+        <hr>
+        <div v-for="(arr,index) in arrs">{{index+1}}:{{arr}} </div>
+    </div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            arrs:["北京","天津","上海","海南","郑州"]
+        }
+    })
+</script>
+</html>
